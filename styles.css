@@ -1116,23 +1116,22 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 /* ============================================== */
 
 @media (max-width: 768px) {
-    /* Mengangkat posisi bunga agar lebih ke atas di layar HP */
+    /* Membuat bunga lebih BESAR (scale 0.9) dan sedikit menyesuaikan posisi */
     .flowers {
-        /* Mengatur skala di HP menjadi 0.7 (70% dari ukuran desktop) */
-        transform: scale(0.7); 
+        /* Meningkatkan skala bunga (90% dari ukuran desktop) */
+        transform: scale(0.9); 
         transform-origin: bottom center;
-        /* ANGKAT BUNGA: Geser seluruh set bunga 10vmin ke atas dari batas bawah */
-        bottom: 10vmin; 
+        /* Mengangkat bunga sejauh 5vmin dari batas bawah (dibuat lebih rendah dari 10vmin agar muat) */
+        bottom: 5vmin; 
     }
     
-    /* Mengatur jarak antar bunga di HP agar tidak terlalu rapat */
+    /* Mengatur jarak antar bunga agar tidak terlalu rapat saat diperbesar */
     .flower {
-        margin: 0 5vw; /* Menggunakan viewport width (vw) untuk jarak fleksibel */
+        margin: 0 4vw; 
     }
 
-    /* Mengoptimalkan tampilan Welcome Screen */
+    /* Mengoptimalkan tampilan Welcome Screen (Tombol Klik) */
     .welcome-container {
-        /* Mengurangi padding agar elemen tidak terlalu besar di HP */
         padding: 30px; 
     }
     
@@ -1155,7 +1154,6 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 
     /* Penyesuaian Bunga ke-4 (Flower--4) jika diperlukan */
     .flower--4 {
-        /* Bunga ke-4 terlihat terlalu tinggi/besar, kita bisa kurangi ukurannya lagi */
         transform: scale(0.8);
     }
 }
