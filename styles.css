@@ -1142,19 +1142,20 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 
     .welcome-message {
         /* Ukuran font untuk pesan pendukung di HP */
-        font-size: 0.9em;
-        margin-bottom: 25px;
+        font-size: 1.0em;
+        margin-bottom: 35px;
     }
     
     .open-button {
         /* Ukuran padding tombol di HP */
-        padding: 10px 25px;
+        padding: 25px 35px;
         font-size: 1em;
     }
 
     /* Penyesuaian Bunga ke-4 (Flower--4) */
     .flower--4 {
-        transform: scale(0.8);
+        transform: scale(0.9);
     }
 }
+
 
