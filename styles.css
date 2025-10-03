@@ -1116,18 +1116,18 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 /* ============================================== */
 
 @media (max-width: 768px) {
-    /* Membuat bunga lebih BESAR (scale 0.9) dan sedikit menyesuaikan posisi */
+    /* Membuat bunga SEBESAR MUNGKIN (scale 1) dan menempatkannya di paling bawah */
     .flowers {
-        /* Meningkatkan skala bunga (90% dari ukuran desktop) */
-        transform: scale(0.9); 
+        /* Meningkatkan skala bunga menjadi 100% dari ukuran desktop */
+        transform: scale(1); 
         transform-origin: bottom center;
-        /* Mengangkat bunga sejauh 5vmin dari batas bawah (dibuat lebih rendah dari 10vmin agar muat) */
-        bottom: 5vmin; 
+        /* Menyesuaikan posisi agar pangkal bunga di batas bawah layar */
+        bottom: 0vmin; 
     }
     
     /* Mengatur jarak antar bunga agar tidak terlalu rapat saat diperbesar */
     .flower {
-        margin: 0 4vw; 
+        margin: 0 3vw; /* Sedikit dirapatkan (dari 4vw ke 3vw) */
     }
 
     /* Mengoptimalkan tampilan Welcome Screen (Tombol Klik) */
@@ -1136,24 +1136,25 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
     }
     
     .welcome-title {
-        /* Mengurangi ukuran font untuk judul utama di HP */
+        /* Ukuran font untuk judul utama di HP */
         font-size: 2.2em; 
     }
 
     .welcome-message {
-        /* Mengurangi ukuran font untuk pesan pendukung di HP */
+        /* Ukuran font untuk pesan pendukung di HP */
         font-size: 0.9em;
         margin-bottom: 25px;
     }
     
     .open-button {
-        /* Menyesuaikan ukuran padding tombol di HP */
+        /* Ukuran padding tombol di HP */
         padding: 10px 25px;
         font-size: 1em;
     }
 
-    /* Penyesuaian Bunga ke-4 (Flower--4) jika diperlukan */
+    /* Penyesuaian Bunga ke-4 (Flower--4) */
     .flower--4 {
         transform: scale(0.8);
     }
 }
+
