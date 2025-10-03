@@ -1116,13 +1116,13 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 /* ============================================== */
 
 @media (max-width: 768px) {
-    /* Mengurangi ukuran bunga secara keseluruhan */
+    /* Mengangkat posisi bunga agar lebih ke atas di layar HP */
     .flowers {
         /* Mengatur skala di HP menjadi 0.7 (70% dari ukuran desktop) */
-        transform: scale(0.7) translateY(20vmin);
+        transform: scale(0.7); 
         transform-origin: bottom center;
-        /* Sedikit geser ke atas di HP agar tidak terlalu terpotong */
-        bottom: 0;
+        /* ANGKAT BUNGA: Geser seluruh set bunga 10vmin ke atas dari batas bawah */
+        bottom: 10vmin; 
     }
     
     /* Mengatur jarak antar bunga di HP agar tidak terlalu rapat */
@@ -1130,30 +1130,30 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
         margin: 0 5vw; /* Menggunakan viewport width (vw) untuk jarak fleksibel */
     }
 
-    /* Mengoptimalkan tampilan Loading Screen (Tombol Klik) */
-    .loading-screen {
-        /* Mengurangi padding agar layar tidak terlalu lebar */
-        padding: 20px;
+    /* Mengoptimalkan tampilan Welcome Screen */
+    .welcome-container {
+        /* Mengurangi padding agar elemen tidak terlalu besar di HP */
+        padding: 30px; 
     }
-
-    .welcome-text {
-        /* Mengurangi ukuran font untuk judul/teks utama di HP */
-        font-size: 1.8em; 
+    
+    .welcome-title {
+        /* Mengurangi ukuran font untuk judul utama di HP */
+        font-size: 2.2em; 
     }
 
     .welcome-message {
         /* Mengurangi ukuran font untuk pesan pendukung di HP */
         font-size: 0.9em;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
     
     .open-button {
-        /* Mengurangi ukuran padding tombol di HP */
+        /* Menyesuaikan ukuran padding tombol di HP */
         padding: 10px 25px;
         font-size: 1em;
     }
 
-    /* Penyesuaian Bunga ke-4 (Flower--4) */
+    /* Penyesuaian Bunga ke-4 (Flower--4) jika diperlukan */
     .flower--4 {
         /* Bunga ke-4 terlihat terlalu tinggi/besar, kita bisa kurangi ukurannya lagi */
         transform: scale(0.8);
