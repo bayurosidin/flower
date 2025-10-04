@@ -12,24 +12,16 @@
 
 /* --- GAYA TAMBAHAN: MASKER "TANAH" UNTUK MEMOTONG BAGIAN BAWAH --- */
 
-body::after {
-    content: "";
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    /* Atur ketinggian potongan yang diinginkan, misalnya 10vmin */
-    height: 10vmin; 
-    
-    background-color: var(--dark-color); /* Warna hitam/gelap sesuai background */
-    
-    /* Z-index harus tinggi agar menutupi semua batang terpanjang */
-    z-index: 150; 
-    
-    /* Opsional: Efek bayangan gelap di atas masker agar transisi terlihat seperti permukaan tanah */
-    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.95);
+body {
+  display: flex;
+  /* Ganti 'center' (atau yang lain) menjadi 'flex-end' */
+  align-items: flex-end; 
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--dark-color);
+  overflow: hidden;
+  perspective: 1000px;
 }
-
 .night {
   position: fixed;
   left: 50%;
