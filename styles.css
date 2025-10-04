@@ -33,7 +33,7 @@ body {
 
 .flowers {
   position: relative;
-  transform: scale(1.0); /* PERUBAHAN: Memperbesar ukuran bunga */
+  transform: scale(0.8); /* PERUBAHAN: Memperbesar ukuran bunga */
 }
 
 .flower {
@@ -1111,6 +1111,7 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
     0% { text-shadow: 0 0 10px rgba(0, 210, 255, 0.5), 0 0 20px rgba(164, 0, 255, 0.3); }
     100% { text-shadow: 0 0 15px rgba(0, 210, 255, 0.8), 0 0 30px rgba(164, 0, 255, 0.5); }
 }
+
 
 
 
