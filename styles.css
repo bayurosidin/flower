@@ -1116,24 +1116,23 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 /* ============================================== */
 
 @media (max-width: 768px) {
-    /* MENGURANGI PEMBESARAN BUNGA KESELURUHAN DARI 1.05 MENJADI 0.85 */
+    /* Menggeser bunga ke atas dengan mengubah nilai 'bottom' menjadi 0vmin */
     .flowers {
-        transform: scale(0.85); /* Diperkecil agar muat di HP */
+        transform: scale(0.95); 
         transform-origin: bottom center;
-        bottom: 5vmin; 
+        bottom: 0vmin; /* DIUBAH: Mengangkat bunga lebih tinggi dari bawah layar */
     }
     
-    /* Mengurangi jarak antar bunga dari 2vw menjadi 1vw (TETAP SAMA) */
+    /* Mengurangi jarak antar bunga (TETAP SAMA) */
     .flower {
         margin: 0 1vw; 
     }
 
-    /* Mengoptimalkan tampilan Welcome Screen (Tombol Klik) */
+    /* Penyesuaian Welcome Screen (TETAP SAMA) */
     .welcome-container {
         padding: 30px; 
     }
     
-    /* Mengurangi ukuran font judul utama dari 2.2em menjadi 1.8em */
     .welcome-title {
         font-size: 1.8em; 
     }
@@ -1148,12 +1147,8 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
         font-size: 1em;
     }
 
-    /* Penyesuaian Bunga ke-4 (Flower--4) */
+    /* Penyesuaian Bunga ke-4 (TETAP SAMA) */
     .flower--4 {
         transform: scale(0.8);
     }
 }
-
-
-
-
