@@ -1120,7 +1120,7 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
     .flowers {
         transform: scale(0.95); 
         transform-origin: bottom center;
-        bottom: 20vmin; /* DIUBAH: Mengangkat bunga lebih tinggi dari bawah layar */
+        bottom: 0vmin; /* DIUBAH: Mengangkat bunga lebih tinggi dari bawah layar */
     }
     
     /* Mengurangi jarak antar bunga (TETAP SAMA) */
@@ -1152,6 +1152,7 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
         transform: scale(0.8);
     }
 }
+
 
 
 
