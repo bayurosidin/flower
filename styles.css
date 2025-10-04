@@ -1116,11 +1116,13 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 /* ============================================== */
 
 @media (max-width: 768px) {
-    /* MENYESUAIKAN POSISI DAN SKALA BUNGA AGAR TIDAK TENGGELAM */
+    /* BUNGA JADI BESAR DAN DI TENGAH LAYAR HP */
     .flowers {
-        transform: scale(0.9); /* DIUBAH: Skala dikurangi lagi (dari 0.85 ke 0.8) */
+        /* Gabungan skala besar dan geser ke kiri 50% untuk pemusatan di tengah */
+        transform: scale(1.2) translateX(-50%); 
         transform-origin: bottom center;
-        bottom: -7vmin; /* DIUBAH: Mengangkat bunga lebih tinggi (dari 3vmin ke -5vmin) */
+        bottom: -5vmin; /* Mengangkat bunga agar tidak terpotong */
+        left: 50%; /* Menentukan titik tengah horizontal */
     }
     
     /* Mengurangi jarak antar bunga (TETAP SAMA) */
@@ -1131,7 +1133,7 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
     /* Penyesuaian Welcome Screen (TETAP SAMA) */
     .welcome-container {
         padding: 30px; 
-        padding-top: 40px; 
+        padding-top: 50px; 
     }
     
     .welcome-title {
@@ -1150,7 +1152,6 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 
     /* Penyesuaian Bunga ke-4 (TETAP SAMA) */
     .flower--4 {
-        transform: scale(0.9);
+        transform: scale(0.8);
     }
 }
-
