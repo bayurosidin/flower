@@ -40,7 +40,7 @@ body {
 .flower {
   position: absolute;
   /* Ganti '5vmin' menjadi '0vmin' */
-  bottom: 0vmin; 
+  bottom: 5vmin; 
   transform-origin: bottom center;
   z-index: 10;
   --fl-speed: 0.8s;
@@ -1114,6 +1114,7 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
     0% { text-shadow: 0 0 10px rgba(0, 210, 255, 0.5), 0 0 20px rgba(164, 0, 255, 0.3); }
     100% { text-shadow: 0 0 15px rgba(0, 210, 255, 0.8), 0 0 30px rgba(164, 0, 255, 0.5); }
 }
+
 
 
 
