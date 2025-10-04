@@ -32,16 +32,33 @@ body {
 }
 
 .flowers {
-  position: relative;
-  transform: scale(0.7);
+  position: relative;
+  /* Mengubah skala menjadi 1.0 (atau lebih) agar bunga lebih besar */
+  transform: scale(1.0); 
 }
 
+/* Tambahkan atau modifikasi juga body agar konten tepat di tengah */
+body {
+  display: flex;
+  /* Mengatur posisi ke tengah horizontal dan vertikal */
+  align-items: center; 
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--dark-color);
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+/* Modifikasi flower agar dia sedikit naik */
 .flower {
-  position: absolute;
-  bottom: 10vmin;
-  transform-origin: bottom center;
-  z-index: 10;
-  --fl-speed: 0.8s;
+  position: absolute;
+  /* Naikkan posisi ke 0vmin agar batang bunga menyentuh dasar */
+  bottom: 0vmin; 
+  transform-origin: bottom center;
+  z-index: 10;
+  --fl-speed: 0.8s;
+}
+
 }
 .flower--1 {
   animation: moving-flower-1 4s linear infinite;
@@ -1110,3 +1127,4 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
     0% { text-shadow: 0 0 10px rgba(0, 210, 255, 0.5), 0 0 20px rgba(164, 0, 255, 0.3); }
     100% { text-shadow: 0 0 15px rgba(0, 210, 255, 0.8), 0 0 30px rgba(164, 0, 255, 0.5); }
 }
+
